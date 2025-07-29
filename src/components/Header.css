@@ -1,4 +1,4 @@
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,6 +7,19 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+} */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Stick it on top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Above video */
+  background: transparent; /* So video shows through */
+  backdrop-filter: blur(6px); /* Optional glass effect */
+  padding: 1.2rem 2rem;
 }
 
 /* Left Logo */
